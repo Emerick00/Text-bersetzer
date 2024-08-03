@@ -1,0 +1,50 @@
+<template>
+  <main>
+    <HeaderMenu />
+    <router-view></router-view>
+  </main>
+</template>
+
+<script>
+// import MainSections from './pages/MainSection.vue';
+import HeaderMenu from './components/Utilities/HeaderMenu.vue';
+
+export default {
+  name: 'MainSection',
+  components: {
+    // MainSections,
+    HeaderMenu,
+  },
+};
+</script>
+
+<style>
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: #f1f1f1;
+}
+
+main {
+  width: 80%;
+  margin: auto;
+  padding: 20px 0px;
+}
+
+.sdw-style {
+  box-shadow: -5px -5px 5px rgba(255, 255, 255, 0.22),
+    -3px -2px 7px rgba(72, 69, 69, 0.241);
+}
+
+.sdw-tache {
+  box-shadow: -5px -5px 5px rgba(255, 255, 255, 0.22),
+    -3px -2px 7px rgba(72, 69, 69, 0.241);
+  grid-auto-rows: 100%;
+}
+
+.grid-els {
+  grid-auto-rows: 270px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+</style>
